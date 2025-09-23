@@ -1,0 +1,29 @@
+kind: pipeline
+type: ssh
+name: update-bg2s-vitrine
+
+clone:
+  disable: true 
+
+server:
+  host:
+    from_secret: niflheim_host
+  user:
+    from_secret: niflheim_user
+  ssh_key:
+    from_secret: niflheim_key
+  port:
+    from_secret: niflheim_port
+
+steps:
+  - name: pull-docker-image
+    commands:
+      - cd /home/ubuntu/bg2s/bg2s-vitrine
+      - git pull origin main
+      - docker compose up -d --build
+
+trigger:
+  branch:
+    - main
+  event:
+    - push

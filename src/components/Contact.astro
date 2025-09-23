@@ -1,0 +1,49 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<section id="contacts" class="bg-gray-100 py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Contact</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-12 text-xl">
+            Nous attachons une importance particulière à la qualité de nos
+            agents et veillons à ce qu'ils respectent certains points
+            essentiels.
+        </p>
+
+        <div
+            class="max-w-5xl mx-auto bg-gradient-to-r from-red-600 to-red-800 text-white rounded-xl p-10 text-center shadow-md space-y-6"
+        >
+            <h2 class="text-2xl sm:text-3xl font-bold">
+                Prêt à sécuriser vos locaux ?
+            </h2>
+
+            <p class="text-base sm:text-lg">
+                Appelez-nous dès maintenant pour une consultation gratuite et un
+                devis personnalisé.
+            </p>
+
+            <div
+                class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4"
+            >
+                <!-- Téléphone -->
+                <a
+                    href="tel:+0356574060 "
+                    class="flex items-center gap-2 bg-white text-red-700 font-semibold px-5 py-3 rounded-lg shadow-sm hover:bg-red-50 transition"
+                >
+                    <Icon name="mdi:phone-outline" class="w-5 h-5" />
+                    <span>+33 3 56 57 40 60</span>
+                </a>
+
+                <!-- Email -->
+                <a
+                    href="mailto:contact@bg2s.com"
+                    class="flex items-center gap-2 bg-white text-red-700 font-semibold px-5 py-3 rounded-lg shadow-sm hover:bg-red-50 transition"
+                >
+                    <Icon name="mdi:email-outline" class="w-5 h-5" />
+                    <span>contact@bg2s.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

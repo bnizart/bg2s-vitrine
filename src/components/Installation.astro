@@ -1,0 +1,229 @@
+---
+import { Icon } from "astro-icon/components";
+import Logo from "../components/Logo.astro";
+---
+
+<section id="services" class="bg-gray-100 py-20 px-6">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+            Installation de Systèmes de Sécurité
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-12 text-xl">
+            <span class="font-semibold"><Logo /></span> vous propose d'équiper vos
+            locaux après une étude complète et une analyse de vos besoins.
+        </p>
+
+        <div class="mb-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+                Notre Approche
+            </h2>
+        </div>
+
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+        >
+            <!-- Carte 1 -->
+            <div
+                class="bg-white border border-green-200 rounded-xl p-6 text-center shadow-sm"
+            >
+                <div
+                    class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-green-600 text-white"
+                >
+                    <Icon name="mdi:eye-outline" class="w-6 h-6" />
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                    Étude Complète
+                </h3>
+                <p class="text-sm text-gray-600">
+                    Analyse approfondie de vos besoins et étude de la
+                    configuration de vos locaux pour une solution sur mesure.
+                </p>
+            </div>
+
+            <!-- Carte 2 -->
+            <div
+                class="bg-white border border-green-200 rounded-xl p-6 text-center shadow-sm"
+            >
+                <div
+                    class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-green-600 text-white"
+                >
+                    <Icon name="mdi:clipboard-check-outline" class="w-6 h-6" />
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                    Audit & Diagnostic
+                </h3>
+                <p class="text-sm text-gray-600">
+                    Audit complet et diagnostic de vos locaux pour identifier
+                    les points sensibles et les besoins spécifiques.
+                </p>
+            </div>
+
+            <!-- Carte 3 -->
+            <div
+                class="bg-white border border-green-200 rounded-xl p-6 text-center shadow-sm"
+            >
+                <div
+                    class="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-green-600 text-white"
+                >
+                    <Icon name="mdi:cog-outline" class="w-6 h-6" />
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                    Installation Adaptée
+                </h3>
+                <p class="text-sm text-gray-600">
+                    Système d'alarme adapté à l'agencement, au niveau de risque
+                    ainsi qu'à vos attentes pour la sécurisation.
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto text-center mb-12 mt-12">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">
+                Protection Contre Tous les Risques
+            </h2>
+        </div>
+
+        <!-- Première rangée -->
+        <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12"
+        >
+            <!-- Carte 1 -->
+            <div
+                class="bg-white border-l-4 border-red-500 rounded-lg shadow-sm p-6 text-left"
+            >
+                <div class="flex items-center gap-3 mb-2">
+                    <Icon
+                        name="mdi:shield-outline"
+                        class="text-red-500 w-10 h-auto"
+                    />
+                    <h3 class="text-lg font-semibold text-gray-900">
+                        Intrusion & Vol
+                    </h3>
+                </div>
+                <p class="text-sm text-gray-600">
+                    Protection contre les tentatives d'intrusion et les vols
+                    avec systèmes de détection avancés.
+                </p>
+            </div>
+
+            <!-- Carte 2 -->
+            <div
+                class="bg-white border-l-4 border-orange-500 rounded-lg shadow-sm p-6 text-left"
+            >
+                <div class="flex items-center gap-3 mb-2">
+                    <Icon
+                        name="mdi:alert-outline"
+                        class="text-orange-500 w-10 h-auto"
+                    />
+                    <h3 class="text-lg font-semibold text-gray-900">
+                        Incendie
+                    </h3>
+                </div>
+                <p class="text-sm text-gray-600">
+                    Systèmes de détection incendie conformes aux normes pour une
+                    protection optimale.
+                </p>
+            </div>
+
+            <!-- Carte 3 -->
+            <div
+                class="bg-white border-l-4 border-purple-500 rounded-lg shadow-sm p-6 text-left"
+            >
+                <div class="flex items-center gap-3 mb-2">
+                    <Icon
+                        name="mdi:account-group-outline"
+                        class="text-purple-500 w-10 h-auto"
+                    />
+                    <h3 class="text-lg font-semibold text-gray-900">
+                        Agressions & Malveillance
+                    </h3>
+                </div>
+                <p class="text-sm text-gray-600">
+                    Protection contre les agressions, le vandalisme et tous
+                    actes de malveillance.
+                </p>
+            </div>
+        </div>
+
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto"
+        >
+            <!-- Carte 4 -->
+            <div class="bg-white rounded-xl shadow-sm p-6 text-center">
+                <div class="text-green-600 mb-3">
+                    <Icon
+                        name="mdi:camera-outline"
+                        class="w-10 h-auto mx-auto"
+                    />
+                </div>
+                <h4 class="text-md font-semibold text-gray-900 mb-1">
+                    Vidéosurveillance
+                </h4>
+                <p class="text-sm text-gray-600">
+                    Caméras IP haute définition adaptées à votre configuration
+                    avec enregistrement et accès à distance.
+                </p>
+            </div>
+
+            <!-- Carte 5 -->
+            <div class="bg-white rounded-xl shadow-sm p-6 text-center">
+                <div class="text-green-600 mb-3">
+                    <Icon
+                        name="mdi:shield-check-outline"
+                        class="w-10 h-auto mx-auto"
+                    />
+                </div>
+                <h4 class="text-md font-semibold text-gray-900 mb-1">
+                    Systèmes d'Alarme
+                </h4>
+                <p class="text-sm text-gray-600">
+                    Alarmes anti-intrusion personnalisées selon votre niveau de
+                    risque et agencement.
+                </p>
+            </div>
+
+            <!-- Carte 6 -->
+            <div class="bg-white rounded-xl shadow-sm p-6 text-center">
+                <div class="text-green-600 mb-3">
+                    <Icon name="mdi:wifi" class="w-10 h-auto mx-auto" />
+                </div>
+                <h4 class="text-md font-semibold text-gray-900 mb-1">
+                    Contrôle d'Accès
+                </h4>
+                <p class="text-sm text-gray-600">
+                    Solutions de contrôle d'accès adaptées à la configuration de
+                    vos locaux.
+                </p>
+            </div>
+
+            <!-- Carte 7 -->
+            <div class="bg-white rounded-xl shadow-sm p-6 text-center">
+                <div class="text-green-600 mb-3">
+                    <Icon
+                        name="mdi:flash-outline"
+                        class="w-10 h-auto mx-auto"
+                    />
+                </div>
+                <h4 class="text-md font-semibold text-gray-900 mb-1">
+                    Détection Incendie
+                </h4>
+                <p class="text-sm text-gray-600">
+                    Systèmes de détection incendie conformes aux normes et
+                    adaptés à vos besoins.
+                </p>
+            </div>
+        </div>
+
+        <div
+            class="mt-20 bg-gradient-to-r from-green-600 to-green-800 text-white rounded-xl py-12 px-6 text-center max-w-6xl mx-auto"
+        >
+            <h3 class="text-xl sm:text-2xl font-semibold mb-4">
+                Solutions d'Installation Sur Mesure
+            </h3>
+            <p class="text-white/90">
+                Bénéficiez d'une étude complète et d'équipements parfaitement
+                adaptés à vos besoins et à la configuration de vos locaux.
+            </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,94 @@
+---
+import { Icon } from "astro-icon/components";
+import Logo from "../components/Logo.astro";
+---
+
+<section class="bg-gray-50 py-20 px-6" id="telesurveillance">
+    <div class="max-w-7xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+            Service de Ronde
+        </h2>
+        <p class="text-gray-700 max-w-3xl mx-auto text-xl">
+            Prévenir et détecter les risques d'intrusion et d'incendie grâce à
+            nos rondes de sécurité professionnelles.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">
+        <div
+            class="overflow-hidden text-center bg-white rounded shadow-md text-slate-500 shadow-slate-200"
+        >
+            <div class="text-red-600 w-18 h-18 m-auto mt-3">
+                <Icon name="mdi:hours-24" class="w-full h-full" />
+            </div>
+            <div class="p-6">
+                <h3 class="mb-4 text-xl font-medium text-slate-700">
+                    Ronde d'ouverture des locaux
+                </h3>
+                <ul
+                    class="text-gray-700 list-disc list-inside space-y-1 text-start"
+                >
+                    <li>Mise hors alarme de votre site</li>
+                    <li>Ouverture de certains accès</li>
+                    <li>Vérification des installations techniques</li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="overflow-hidden text-center bg-white rounded shadow-md text-slate-500 shadow-slate-200"
+        >
+            <div class="text-red-600 w-18 h-18 m-auto mt-3">
+                <Icon name="mdi:shield-outline" class="w-full h-full" />
+            </div>
+            <div class="p-6">
+                <h3 class="mb-4 text-xl font-medium text-slate-700">
+                    Ronde de fermeture des locaux
+                </h3>
+                <ul
+                    class="text-gray-700 list-disc list-inside space-y-1 text-start"
+                >
+                    <li>Vérification de la fermeture des accès et fenêtres</li>
+                    <li>Contrôle de l'extinction des lumières</li>
+                    <li>Vérification des installations techniques</li>
+                    <li>Mise sous alarme du site</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="bg-gradient-to-r from-green-600 to-green-700 text-white rounded-xl p-8 max-w-6xl mx-auto text-center shadow-md mt-20"
+    >
+        <!-- Titre -->
+        <h2 class="text-xl sm:text-2xl font-bold mb-2">
+            Technologie WITHTIME Mobile
+        </h2>
+
+        <!-- Description -->
+        <p class="text-base sm:text-lg mb-6">
+            <span class="font-bold"><Logo /></span> équipe l'ensemble de ses
+            équipes de l'application WITHTIME Mobile. Les rondes sont tracées, les
+            effectifs sont géolocalisés, et un compte rendu est envoyé directement
+            par mail au client.
+        </p>
+
+        <!-- Points clés -->
+        <div
+            class="flex flex-col sm:flex-row justify-center items-center gap-6 text-sm sm:text-base"
+        >
+            <div class="flex items-center gap-2">
+                <Icon name="mdi:map-marker-radius" class="w-5 h-5" />
+                <span>Géolocalisation</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <Icon name="mdi:clock-outline" class="w-5 h-5" />
+                <span>Traçage des rondes</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <Icon name="mdi:email-outline" class="w-5 h-5" />
+                <span>Comptes-rendus automatiques</span>
+            </div>
+        </div>
+    </div>
+</section>

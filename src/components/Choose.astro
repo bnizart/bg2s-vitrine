@@ -1,0 +1,61 @@
+---
+import Logo from "../components/Logo.astro";
+---
+
+<section class="bg-gray-15000 py-20 px-6">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-12 items-start">
+        <!-- Texte + liste -->
+        <div class="lg:col-span-2">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-4">
+                Pourquoi choisir <Logo /> ?
+            </h2>
+            <p class="text-gray-600 mb-8 max-w-xl">
+                Notre expertise et notre engagement font de nous le partenaire
+                idéal pour votre sécurité.
+            </p>
+
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-1">✔️</span> Équipe certifiée
+                    et expérimentée
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-1">✔️</span> Intervention 24h/24
+                    et 7j/7
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-1">✔️</span> Technologies de pointe
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-1">✔️</span> Devis gratuit et
+                    personnalisé
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-1">✔️</span> Maintenance et support
+                    inclus
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-green-500 mt-1">✔️</span> Conformité aux normes
+                    en vigueur
+                </li>
+            </ul>
+        </div>
+
+        <!-- Bloc rouge "Devis gratuit" -->
+        <div
+            class="bg-gradient-to-br from-red-600 to-red-800 text-white rounded-xl p-8 shadow-lg"
+        >
+            <h3 class="text-xl font-bold mb-4">Demandez votre devis</h3>
+            <p class="mb-6">
+                Contactez-nous pour une étude personnalisée de vos besoins en
+                sécurité.
+            </p>
+            <a
+                href="#contact"
+                class="inline-block bg-white text-red-600 font-semibold px-6 py-3 rounded-md hover:bg-red-50 transition"
+            >
+                Devis gratuit
+            </a>
+        </div>
+    </div>
+</section>

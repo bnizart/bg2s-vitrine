@@ -1,0 +1,114 @@
+---
+import { Icon } from "astro-icon/components";
+import Logo from "../../components/Logo.astro";
+
+const year = new Date().getFullYear().toString();
+---
+
+<footer class="bg-gray-900 text-gray-300 px-6 py-12 text-sm">
+    <div class="text-center max-w-4xl mx-auto mb-12">
+        <h2 class="text-2xl font-bold bg-amber-50 w-30 rounded-2xl m-auto">
+            <Logo />
+        </h2>
+        <p class="mt-2 font-semibold text-white">
+            151 route Nationale 62980 VERMELLES – FRANCE
+        </p>
+        <p class="mt-2">
+            SAS au capital de 100€ – SIRET 891 752 834 00020 – APE 8020Z – TVA
+            Intracommunautaire FR66891752834
+        </p>
+        <p class="mt-2">
+            Article L.612-9 du Code de la Sécurité Intérieure "CSI" :
+            Autorisation administrative d’exercer délivrée par le Conseil
+            National des Activités Privées de Sécurité sous le n° <br />
+            <strong>AUT-059-2121-06-02-20220769223</strong>
+        </p>
+        <p class="mt-2">
+            Article L.612-14 du CSI : L’autorisation d’exercice ne confère
+            aucune prérogative de puissance publique à l’entreprise ou aux
+            personnes qui en bénéficient
+        </p>
+    </div>
+
+    <hr class="border-gray-700 mb-10" />
+
+    <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-10"
+    >
+        <div>
+            <h3 class="text-white font-semibold text-base mb-4">
+                Liens utiles
+            </h3>
+            <ul class="space-y-2">
+                <li><a href="/" class="hover:text-white">Accueil</a></li>
+                <li>
+                    <a href="/services" class="hover:text-white">Services</a>
+                </li>
+                <li>
+                    <a href="/clients" class="hover:text-white">Nos clients</a>
+                </li>
+                <li>
+                    <a href="/contact" class="hover:text-white"
+                        >Contactez-nous</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-white font-semibold text-base mb-4">À propos</h3>
+            <p class="mb-4">
+                <span class="font-bold">BG2S</span> assure la sécurité avec une offre
+                globale de services de sûreté, surveillance, protection, télésurveillance,
+                intervention et ronde.
+            </p>
+            <p>
+                Notre objectif est de proposer des solutions personnalisées et
+                adaptées aux spécificités de chaque client, investir sans cesse
+                dans la formation de nos équipes, leur professionnalisme, leur
+                présentation et leur attitude, afin de proposer un service
+                d'excellence et véhiculer ainsi la meilleure image de marque de
+                nos clients.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="text-white font-semibold text-base mb-4">
+                Contactez-nous
+            </h3>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2">
+                    <Icon name="mdi:phone" class="w-5 h-5 text-red-500" />
+                    +33 3 56 57 40 60
+                </li>
+                <li class="flex items-center gap-2">
+                    <Icon name="mdi:email" class="w-5 h-5 text-red-500" />
+                    contact@bg2s.com
+                </li>
+                <li class="flex items-center gap-2">
+                    <Icon
+                        name="mdi:office-building"
+                        class="w-5 h-5 text-red-500"
+                    />
+                    Vermelles, France
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="border-gray-700 mb-6" />
+
+    <div
+        class="text-center text-white text-xs flex flex-col sm:flex-row justify-between items-center max-w-7xl mx-auto"
+    >
+        <p>© {year} BG2S – Expert en Sécurité. Tous droits réservés.</p>
+        <p class="mt-2 sm:mt-0">
+            Site développé par
+            <a
+                href="https://bastien.nizart.me"
+                target="_blank"
+                class="text-red-500 hover:underline">Bastien Nizart</a
+            >
+        </p>
+    </div>
+</footer>

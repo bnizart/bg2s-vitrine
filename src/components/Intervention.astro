@@ -1,0 +1,207 @@
+---
+import { Icon } from "astro-icon/components";
+import Logo from "../components/Logo.astro";
+---
+
+<section class="bg-gray-100 py-20 px-6" id="telesurveillance">
+    <div class="max-w-7xl mx-auto text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
+            Intervention sur Alarme
+        </h2>
+        <p class="text-gray-700 max-w-3xl mx-auto text-xl mb-4">
+            Intervention rapide avec compte-rendu électronique systématiquement
+            envoyé au client.
+        </p>
+        <p class="text-gray-700 max-w-3xl mx-auto text-xl">
+            <span class="font-semibold"><Logo /></span> muni l'ensemble de ses équipes
+            de l'application WITHTIME Mobile. Les interventions sont tracées et l'ensemble
+            de nos effectifs est géolocalisé.
+        </p>
+    </div>
+
+    <div class="max-w-7xl mx-auto text-center mb-16 mt-16">
+        <h2 class="text-2xl font-extrabold text-gray-900 mb-10">
+            Processus d'Intervention
+        </h2>
+
+        <!-- Étapes du processus -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- Étape 1 -->
+            <div class="flex flex-col items-center gap-2">
+                <div
+                    class="w-12 h-12 rounded-full bg-red-100 text-red-600 font-bold flex items-center justify-center text-lg"
+                >
+                    1
+                </div>
+                <h3 class="font-semibold text-gray-800">Réception Alarme</h3>
+                <p class="text-sm text-gray-600 max-w-xs">
+                    Réception de l'alerte par notre centre de contrôle ou
+                    télésurveillance
+                </p>
+            </div>
+
+            <!-- Étape 2 -->
+            <div class="flex flex-col items-center gap-2">
+                <div
+                    class="w-12 h-12 rounded-full bg-red-100 text-red-600 font-bold flex items-center justify-center text-lg"
+                >
+                    2
+                </div>
+                <h3 class="font-semibold text-gray-800">Déploiement</h3>
+                <p class="text-sm text-gray-600 max-w-xs">
+                    Déploiement immédiat de nos équipes géolocalisées sur site
+                </p>
+            </div>
+
+            <!-- Étape 3 -->
+            <div class="flex flex-col items-center gap-2">
+                <div
+                    class="w-12 h-12 rounded-full bg-red-100 text-red-600 font-bold flex items-center justify-center text-lg"
+                >
+                    3
+                </div>
+                <h3 class="font-semibold text-gray-800">Intervention</h3>
+                <p class="text-sm text-gray-600 max-w-xs">
+                    Intervention rapide avec levée de doute sur site
+                </p>
+            </div>
+
+            <!-- Étape 4 -->
+            <div class="flex flex-col items-center gap-2">
+                <div
+                    class="w-12 h-12 rounded-full bg-red-100 text-red-600 font-bold flex items-center justify-center text-lg"
+                >
+                    4
+                </div>
+                <h3 class="font-semibold text-gray-800">Compte-rendu</h3>
+                <p class="text-sm text-gray-600 max-w-xs">
+                    Compte-rendu électronique envoyé au client et rapport verbal
+                    à la télésurveillance
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">
+        <div
+            class="overflow-hidden text-center bg-white rounded shadow-md text-slate-500 shadow-slate-200"
+        >
+            <div class="text-red-600 w-18 h-18 m-auto mt-3">
+                <Icon name="mdi:lightning-bolt" class="w-full h-full" />
+            </div>
+            <div class="p-6">
+                <h3 class="mb-4 text-xl font-medium text-slate-700">
+                    Non mise en service de l'alarme
+                </h3>
+                <ul
+                    class="text-gray-700 list-disc list-inside space-y-1 text-start"
+                >
+                    <li>
+                        Notre intervenant se chargera de la mettre en fonction
+                        et s'assurera qu'elle est bien effective.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="overflow-hidden text-center bg-white rounded shadow-md text-slate-500 shadow-slate-200"
+        >
+            <div class="text-red-600 w-18 h-18 m-auto mt-3">
+                <Icon name="mdi:eye-settings" class="w-full h-full" />
+            </div>
+            <div class="p-6">
+                <h3 class="mb-4 text-xl font-medium text-slate-700">
+                    Alarme intrusion
+                </h3>
+                <ul
+                    class="text-gray-700 list-disc list-inside space-y-1 text-start"
+                >
+                    <li>Intervention pour une levée de doute.</li>
+                    <li>
+                        Si l'effraction est constatée par notre intervenant, un
+                        agent de surveillance qualifié sera mis en place.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="overflow-hidden text-center bg-white rounded shadow-md text-slate-500 shadow-slate-200"
+        >
+            <div class="text-red-600 w-18 h-18 m-auto mt-3">
+                <Icon name="mdi:cog-outline" class="w-full h-full" />
+            </div>
+            <div class="p-6">
+                <h3 class="mb-4 text-xl font-medium text-slate-700">
+                    Alarme technique
+                </h3>
+                <ul
+                    class="text-gray-700 list-disc list-inside space-y-1 text-start"
+                >
+                    <li>
+                        Notre intervenant effectuera un contrôle. S'il s'agit
+                        d'une panne avérée, nous appellerons les responsables ou
+                        l'astreinte désignée afin de régler le souci au plus
+                        vite.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="overflow-hidden text-center bg-white rounded shadow-md text-slate-500 shadow-slate-200"
+        >
+            <div class="text-red-600 w-18 h-18 m-auto mt-3">
+                <Icon name="mdi:alert" class="w-full h-full" />
+            </div>
+            <div class="p-6">
+                <h3 class="mb-4 text-xl font-medium text-slate-700">
+                    Alarme incendie
+                </h3>
+                <ul
+                    class="text-gray-700 list-disc list-inside space-y-1 text-start"
+                >
+                    <li>Intervention pour une levée de doute.</li>
+                    <li>
+                        Si incendie, le service SSIAP remplira son rôle de
+                        première intervention.
+                    </li>
+                    <li>
+                        Dans le cas d'absence de service de sécurité incendie,
+                        les pompiers seront avisés.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bloc rouge intervention -->
+    <div
+        class="max-w-6xl mx-auto bg-gradient-to-br from-gray-900 via-[#1b0d1c] to-red-900 text-white rounded-xl px-8 py-10 text-center shadow-lg mt-16"
+    >
+        <h3 class="text-2xl font-bold mb-3">Intervention Rapide et Tracée</h3>
+        <p class="mb-6 max-w-3xl mx-auto">
+            Grâce à l'application WITHTIME Mobile, toutes nos interventions sont
+            tracées et nos équipes géolocalisées pour une réactivité optimale.
+        </p>
+
+        <!-- Avantages -->
+        <div
+            class="flex flex-col sm:flex-row justify-center items-center gap-6 text-md md:text-base"
+        >
+            <div class="flex items-center gap-2">
+                <Icon name="mdi:clock-outline" class="w-5 h-5" />
+                <span>Intervention rapide</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <Icon name="mdi:map-marker-radius" class="w-5 h-5" />
+                <span>Équipes géolocalisées</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <Icon name="mdi:email-outline" class="w-5 h-5" />
+                <span>Compte-rendu automatique</span>
+            </div>
+        </div>
+    </div>
+</section>

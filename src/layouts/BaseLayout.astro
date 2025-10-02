@@ -7,25 +7,25 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <meta http-equiv="content-security-policy" content="interest-cohort=()" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>BG2S</title>
-    <meta
-      name="description"
-      content="BG2S : expert en sécurité globale pour particuliers, entreprises et collectivités. Gardiennage, ronde, télésurveillance, installation de systèmes d’alarme et intervention rapide. Services sur mesure, équipes formées, service d’excellence."
-    />
-    <meta
-      name="keywords"
-      content="sécurité, surveillance, gardiennage, rondes, télésurveillance, BG2S, sécurité privée, protection, entreprises, collectivités"
-    />
+    <meta name="description" content="BG2S : expert en sécurité globale pour particuliers, entreprises et collectivités. Gardiennage, ronde, télésurveillance, installation de systèmes d’alarme et intervention rapide. Services sur mesure, équipes formées, service d’excellence."/>
+    <meta name="keywords" content="sécurité, surveillance, gardiennage, rondes, télésurveillance, BG2S, sécurité privée, protection, entreprises, collectivités"/>
     <meta name="author" content="Bastien NIZART" />
     <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicons/android-chrome-512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+
   </head>
   <body>
     <slot />
-    <script
-      defer
-      src="https://umami.nizart.me/script.js"
-      data-website-id="af30e87b-f360-48a0-b7e6-d68648614351"></script>
+    <script defer src="https://umami.nizart.me/script.js" data-website-id="af30e87b-f360-48a0-b7e6-d68648614351"></script>
   </body>
 </html>

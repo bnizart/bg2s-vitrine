@@ -12,14 +12,14 @@
 ## Technos
 
 - **[Astro.js](https://astro.build/)** — Static site generator focused on performance.
-- **[Caddy](https://caddyserver.com/)** — Serves static files over HTTP (TLS handled by reverse proxy).
+- **[Nginx](https://nginx.org/)** — Serves static files (TLS handled by reverse proxy).
 - **[Docker](https://www.docker.com/)** — Containerized builds via GitHub Actions → GHCR.
 - **[Umami](https://umami.is/)** — Privacy-friendly web analytics.
 - **[TailwindCSS](https://tailwindcss.com/)** — Advanced CSS framework.
 
 ## Server setup
 
-The container runs behind a reverse proxy (e.g. Nginx Proxy Manager) on the same Docker `proxy` network. TLS is handled by the proxy, not Caddy.
+The container runs behind a reverse proxy (e.g. Nginx Proxy Manager) on the same Docker `proxy` network. TLS is handled by the proxy.
 
 The `compose.yaml` lives on the server, not in this repo:
 

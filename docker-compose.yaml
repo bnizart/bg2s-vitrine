@@ -1,9 +1,0 @@
-services:
-  site:
-    build:
-      context: .
-      dockerfile: Dockerfile
-      args:
-        SERVER_NAME: localhost
-    ports:
-      - "8181:80"

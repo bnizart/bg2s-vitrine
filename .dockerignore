@@ -1,3 +1,10 @@
 .DS_Store
+.git
+.github
+.vscode
+.idea
+.claude
 node_modules
 dist
+compose.yaml
+README.md

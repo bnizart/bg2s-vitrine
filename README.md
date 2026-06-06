@@ -19,25 +19,30 @@
 
 ## Server setup
 
-The `compose.yaml` lives on the server, not in this repo. Example:
+TLS is handled by Nginx Proxy Manager. Caddy serves plain HTTP on port 80, NPM terminates SSL.
+
+The `compose.yaml` lives on the server, not in this repo:
 
 ```yaml
+networks:
+  proxy:
+    external: true
+
 services:
   site:
+    container_name: bg2s-vitrine
     image: ghcr.io/bnizart/bg2s-vitrine:latest
     restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-      - "443:443/udp"
-    volumes:
-      - caddy_data:/data
-      - caddy_config:/config
-
-volumes:
-  caddy_data:
-  caddy_config:
+    networks:
+      - proxy
 ```
+
+No port exposure needed — NPM reaches the container via the `proxy` Docker network.
+
+**NPM config:**
+- Proxy Host: `bg2s.com` → `http://bg2s-vitrine:80`
+- SSL: Let's Encrypt, Force SSL enabled
+- Redirect Host: `www.bg2s.com` → `https://bg2s.com` (301)
 
 On deploy, CI SSHes into the server and runs:
 

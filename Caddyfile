@@ -1,12 +1,4 @@
-{
-	email contact@bg2s.com
-}
-
-www.bg2s.com {
-	redir https://bg2s.com{uri} permanent
-}
-
-bg2s.com {
+:80 {
 	root * /srv
 	encode zstd gzip
 	file_server

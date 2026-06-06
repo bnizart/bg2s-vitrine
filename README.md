@@ -12,22 +12,35 @@
 ## Technos
 
 - **[Astro.js](https://astro.build/)** — Static site generator focused on performance.
-- **Nginx (Docker)** — Used to serve the built static files.
-- **Docker Compose** — For both local and production deployments.
-- **Umami** — Privacy-friendly web analytics.
-- **TailwindCSS** — Advanced CSS framework.
+- **[Caddy](https://caddyserver.com/)** — Automatic HTTPS, serves built static files.
+- **[Docker](https://www.docker.com/)** — Containerized builds via GitHub Actions → GHCR.
+- **[Umami](https://umami.is/)** — Privacy-friendly web analytics.
+- **[TailwindCSS](https://tailwindcss.com/)** — Advanced CSS framework.
 
-## Docker
+## Server setup
 
-Build image :
+The `compose.yaml` lives on the server, not in this repo. Example:
 
-```bash
-docker build -t bg2s-website .
+```yaml
+services:
+  site:
+    image: ghcr.io/bnizart/bg2s-vitrine:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
 ```
 
-Run server :
+On deploy, CI SSHes into the server and runs:
 
 ```bash
-docker run -it --rm -p 8043:80 bg2s-website
+docker compose pull && docker compose up -d
 ```
-

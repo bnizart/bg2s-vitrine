@@ -1,0 +1,18 @@
+# BG2S
+
+> Expert en sécurité globale pour particuliers, entreprises et collectivités en France.
+
+BG2S est une société de sécurité privée proposant des services de gardiennage, rondes de surveillance, télésurveillance, installation de systèmes d'alarme et intervention rapide. Équipes formées, réactives et engagées dans un service d'excellence.
+
+## Services
+
+- Gardiennage et surveillance de sites
+- Rondes de sécurité
+- Télésurveillance
+- Installation de systèmes d'alarme
+- Intervention rapide
+
+## Contact
+
+- Site : https://www.bg2s.com/
+- Section contact : https://www.bg2s.com/#contact

@@ -12,32 +12,32 @@
 ## Technos
 
 - **[Astro.js](https://astro.build/)** — Static site generator focused on performance.
-- **[Caddy](https://caddyserver.com/)** — Automatic HTTPS, serves built static files.
+- **[Caddy](https://caddyserver.com/)** — Serves static files over HTTP (TLS handled by reverse proxy).
 - **[Docker](https://www.docker.com/)** — Containerized builds via GitHub Actions → GHCR.
 - **[Umami](https://umami.is/)** — Privacy-friendly web analytics.
 - **[TailwindCSS](https://tailwindcss.com/)** — Advanced CSS framework.
 
 ## Server setup
 
-The `compose.yaml` lives on the server, not in this repo. Example:
+The container runs behind a reverse proxy (e.g. Nginx Proxy Manager) on the same Docker `proxy` network. TLS is handled by the proxy, not Caddy.
+
+The `compose.yaml` lives on the server, not in this repo:
 
 ```yaml
+networks:
+  proxy:
+    external: true
+
 services:
   site:
+    container_name: bg2s-vitrine
     image: ghcr.io/bnizart/bg2s-vitrine:latest
     restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
-      - "443:443/udp"
-    volumes:
-      - caddy_data:/data
-      - caddy_config:/config
-
-volumes:
-  caddy_data:
-  caddy_config:
+    networks:
+      - proxy
 ```
+
+Configure your reverse proxy to forward `bg2s.com` → `http://bg2s-vitrine:80` with SSL termination.
 
 On deploy, CI SSHes into the server and runs:
 

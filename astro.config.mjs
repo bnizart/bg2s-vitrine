@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://bg2s.com",
+  site: "https://www.bg2s.com",
   vite: {
     // @ts-ignore
     plugins: [tailwindcss()],

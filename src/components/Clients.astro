@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 const logos = import.meta.glob("../assets/images/clients/*.{png,jpg,jpeg}", {
     eager: true,
 });
@@ -19,12 +21,13 @@ const logos = import.meta.glob("../assets/images/clients/*.{png,jpg,jpeg}", {
             {
                 Object.entries(logos).map(([path, mod]) => {
                     const fileName = path.split("/").pop().split(".")[0];
-                    const imageUrl = mod.default.src;
                     return (
-                        <img
-                            src={imageUrl}
+                        <Image
+                            src={mod.default}
                             alt={fileName}
-                            class="h-20 object-contain"
+                            height={160}
+                            format="webp"
+                            class="h-20 w-auto object-contain"
                             loading="lazy"
                         />
                     );
